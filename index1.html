@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 paskaitaKintamieji</title>
+</head>
+<body>
+
+
+    <h1>Sukeitimo rezultatas</h1>
+    <button onclick="Change()">Pakeitimas</button>
+    
+    <script>
+        "use strict"
+
+        var skaicius1, skaicius2, skaicius3, skaicius4, suma, sandauga, swap, sukeitimas, maxSkaicius
+        skaicius1 = 1;
+        skaicius2 = 2; 
+        skaicius3 = 3;
+        skaicius4 = 4; 
+        maxSkaicius=Number.MAX_VALUE; 
+
+    function Change (sukeitimas) {
+        alert("Sukeista vietomis reiksmes: 2-1 ir 4-3");
+        console.log (sukeitimas);
+    }
+
+    // skaicius1 ir skaicius2 sukeitimas vietomis su nauju kintamuoju 
+        swap=skaicius1; 
+        skaicius1=skaicius2;
+        skaicius2=swap;
+
+    // skaicius4 ir skaicius3 reiksmes sukeisti vietas be kintamojo 
+        [skaicius3, skaicius4 ]= [skaicius4, skaicius3 ];
+        
+        
+    // skaiciai 
+        console.log("pirmas")
+        console.log(skaicius1);
+
+        console.log("antras")
+        console.log(skaicius2);
+                
+        console.log("trecias")
+        console.log(skaicius3);
+
+        console.log("ketvirtas")
+        console.log(skaicius4);
+
+            
+        //[skaicius3,skaicius4]=[skaicius4,skaicius3];
+        
+        //console.log (skaicius3);
+       
+        //console.log (skaicius4);
+
+    // skaiciu suma 
+     suma=skaicius1+skaicius2+skaicius3+skaicius4;
+     console.log("keturiu skaiciu suma")
+     console.log(suma);
+
+    // skaiciu sandauga
+     sandauga=skaicius1*skaicius2*skaicius3*skaicius4;
+     console.log("keturiu skaiciu sandauga")
+     console.log(sandauga);
+
+    //Susikurti kintamąjį maxSkaicius, jam priskirti maksimalią įmanomą skaitinę reikšmę (infinity netinka) ir išvesti į konsolę.
+    console.log("maksimali reiksme");
+    console.log (maxSkaicius);
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skaiciuotuvas</title>
+</head>
+
+    <form>
+
+    Pirmas skaicius:<input type="text" id="1skaicius" /><br>
+    Antras skaicius:<input type="text" id="2skaicius" /><br>
+    <input type="button" onClick="sumaBy()" Value="Suma" />
+    <input type="button" onClick="skirtumasBy()" Value="Skirtumas" />
+    <input type="button" onClick="sandaugaBy()" Value="Sandauga" />
+    <input type="button" onClick="dalybaBy()" Value="Dalyba" />
+    </form>
+    <p>Rezultatas: <br>
+    <span id = "rezultatas"></span>
+    </p>
+
+<body>
+    <script>
+
+
+    function sumaBy(){
+    
+            sk1 = document.getElementById("1skaicius").value;
+            sk2 = document.getElementById("2skaicius").value;
+            document.getElementById("rezultatas").innerHTML = sk1 + sk2;
+        }
+    
+    function skirtumasBy(){ 
+    
+            sk1 = document.getElementById("1skaicius").value;
+            sk2 = document.getElementById("2skaicius").value;
+            document.getElementById("rezultatas").innerHTML = sk1 - sk2;
+        }
+
+    function sandaugaBy() { 
+    
+            sk1 = document.getElementById("1skaicius").value;
+            sk2 = document.getElementById("2skaicius").value;
+            document.getElementById("rezultatas").innerHTML = sk1 * sk2;
+        }
+
+    function dalybaBy() {
+     
+            sk1 = document.getElementById("1skaicius").value;
+            sk2 = document.getElementById("2skaicius").value;
+            document.getElementById("rezultatas").innerHTML = sk1 / sk2;
+        }
+
+</script>
+  
+    
+</body>
+</html>
