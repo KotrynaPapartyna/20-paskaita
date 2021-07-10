@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trikampisSalygos</title>
+</head>
+<body>
+
+    <script>
+        "use strict"
+
+        //3.Patikrinkite, ar iš trijų įvestų trikampio kraštinių galima sudaryti trikampį.
+
+        var a, b, c;
+        a=25;
+        b=17;
+        c=15;
+
+        // ar susidaro trikampis
+        if ((a+b>c) && (a+c>b) && (b+c>a)) {
+            console.log ("trikampi sudaryti galima")
+        } else {
+            console.log ("trikampio sudaryti negalima")
+        }
+
+        //4.1 kokios yra krastines
+        if (a != b && b != c && c != a) {  // visos krastines yra skirtingos, !=nelygu;
+            console.log ("trikampis ivairiakrastis");
+        } else if (a == b && b == c && c == a) {  // visos krastines yra lygios, == Lygu;
+            console.log ("trikampis lygiakrastis");
+        } else {
+            console.log ("trikampis lygiasonis"); // kitu atveju- trikampos turi du vienodus sonus 
+        }
+
+        // 4.2. trikampio kampu rusis pagal krastines
+        if( (a*a)+(b*b) == (c*c) || (c*c + b*b == a*a) || (c*c + a*a == b*b)) {
+            console.log("Trikampis yra statusis");
+        } else if((a*a)+(b*b) < (c*c) || (c*c)+(b*b) < (a*a) || (a*a)+(c*c) < (b*b)) {
+            console.log("Trikampis yra bukasis");
+        } 
+        else {
+            console.log("Trikampis yra smailusis");
+        } 
+     
+    </script>
+    
+</body>
+</html>
