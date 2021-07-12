@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daliklis</title>
+</head>
+<body>
+
+    <script>
+        "use strict"
+
+        function supaprastink(trupmena) {
+            //euklido algoritmas
+            var a= trupmena [1]; //pvz 9
+            var b= trupmena [2]; //pvz 18
+
+            while (a>0 && b>0) {
+                if (a>b) {
+                    a=a%b;  // ciklo veikimo metu skaicius gali tapti 0, kitas skaicius tampa didziausiuBendruDalikliu
+                } else {
+                    b=b%a;  // ciklo veikimo metu skaicius gali tapti 0, kitas skaicius tampa didziausiuBendruDalikliu
+                }
+            }
+
+            //didziausiasBendrasDaliklis dbd
+            var dbd= a+b;
+
+            trupmena[1]/=dbd;
+            trupmena[2]/=dbd;
+
+            return dbd
+
+        }
+        var trupmena = [0, 6, 18]; //devynio astuonioliktosios-- 1/3 (supaprastinus);
+
+        var supaprastintaTrupmena=supaprastink(trupmena);
+
+        console.log(trupmena);
+        console.log (supaprastintaTrupmena);
+
+
+
+
+    </script>
+    
+</body>
+</html>
