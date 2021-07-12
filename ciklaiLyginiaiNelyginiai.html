@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NelygSk ir lygSk</title>
+</head>
+<body>
+
+    <script>
+        "use strict"
+        
+        // lyginiai ir nelyginiai skaiciai 
+        
+        var skaiciai = [10,11,12,13,14,15,16,17,18,19,20,21];
+        
+        var lygSk= [];
+        var nelygSk= []; 
+        var dalybaIs5= [];
+        var dalybaIs3= [];
+
+            for (var i=0; i < skaiciai.length; i++) {
+                if (skaiciai[i] %2==0) {
+                    lygSk.push (skaiciai[i]);
+                }
+                else {
+                    nelygSk.push (skaiciai[i]);
+                }
+            }
+        // konsoleje isvedami visi skaiciai, kurie yra masyve
+        console.log ("visi skaiciai yra tokie:"+skaiciai);
+        //konsoleje parodoma, kurie is masymo skaiciu yra lyginiai 
+        console.log ("lyginiai skaiciai yra tokie:"+ lygSk);
+        //konsoleje parodoma, kurie is masymo skaiciu yra nelyginiai
+        console.log ("nelyginiai skaiciai yra tokie:"+ nelygSk);
+         
+        // Sukurkite skriptą, kuris nuorodytame intervale išveda visus skaičius, 
+        //kurie dalinasi iš 5. ! pasisiakinti kodel atvaizduoja per kelias eilutes
+    
+        for (var i=0; i < skaiciai.length; i++) {
+            if (skaiciai[i]%5==0) {
+                dalybaIs5.push(skaiciai[i]);
+                console.log("is 5 dalijasi sie skaiciai:"+dalybaIs5);
+            }
+        }
+
+        // kiek lyginiu skaiciu intervale dalijasi is 3 
+        // irgi atvaizduoja per dvi eilutes? 
+
+        for (var i=0; i < lygSk.length; i++) {
+            if (lygSk[i]%3==0) {
+                dalybaIs3.push(lygSk[i]);
+                console.log("is 3 dalijasi sie lyginiai skaiciai:"+dalybaIs3);
+            }
+        }
+
+        
+
+       
+
+    
+    
+      
+    
+    
+    
+    </script>
+    
+</body>
+</html>
